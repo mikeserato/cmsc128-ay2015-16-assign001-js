@@ -8,14 +8,30 @@ var wordLibrary = {
 
 function wordToNum(){
 	var word = document.getElementById("input").value;
-	console.log(word);
 
-	var n = word.split(' ');
-	console.log(n);
+	var wordArray = word.split(' ');
+	var value = 0;
+	var digit = 0;
 
-	foreach(n) {
-		console.log(n);
+	for(var i = wordArray.length - 1; i >= 0; i--) {		
+		if(wordArray[i] == 'thousand') {
+			digit = wordLibrary[wordArray[i-1]] * 1000;
+			i--;
+		} else if(wordArray[i] == 'hundred') {
+			digit = wordLibrary[wordArray[i-1]] * 100;
+			i--;
+		} else {
+			digit = wordLibrary[wordArray[i]];
+		}
+	
+		value += digit;
 	}
+	
+	// 82,000
+	// 182,000
+	// 1 million
+	
+	return value;
 }
 
 function showResult(a) {
