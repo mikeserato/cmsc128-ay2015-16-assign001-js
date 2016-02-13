@@ -1,15 +1,24 @@
 <html>
 	<head>
 		<title> CMSC 128 Number Library </title>
-		<script type="text/javascript" src="numToWord.js"> </script>
-		<script type="text/javascript" src="wordToNum.js"> </script>
+		<script type="text/javascript" src="numToWords.js"> </script>
+		<script type="text/javascript" src="wordsToNum.js"> </script>
+		<script type="text/javascript" src="wordsToCurrency.js"> </script>
 	</head>
 	<body>
 		<h3> Mike Serato's Number Library </h3>
-		<p> Type input here: </p>
-		<input type="text" id="input"> <br/>
-		<button id="convert" onclick="showResult(numToWord())"> Convert to Words! </button> <br/>
-		<button id="convert" onclick="showResult(wordToNum())"> Convert to Numbers! </button>
+		Input word/number here: <input type="text" id="input1"> <br/>
+		<button id="convert" onclick="showResult(numToWords())"> Convert to Words! </button> <br/>
+		<button id="convert" onclick="showResult(wordsToNum())"> Convert to Numbers! </button> <br/> <br/> 
+
+		Optional: <br/>
+		Input currency here: <input type="text" id="input2"> <br/> 
+		<button id="convert" onclick="showResult(wordsToCurrency())"> Convert with Currency! </button> <br/> <br/> 
+
+		Input delimiter here: <input type="text" id="input3"> <br/>
+		Input number of jumps here: <input type="text" id="input4"> <br/>
+		<button id="convert" onclick="showResult(numberDelimited())"> Convert with Delimiter! </button> 
+		
 	</body>
 </html>
 
