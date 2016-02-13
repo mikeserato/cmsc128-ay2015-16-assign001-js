@@ -4,21 +4,18 @@
 		<script type="text/javascript" src="numToWords.js"> </script>
 		<script type="text/javascript" src="wordsToNum.js"> </script>
 		<script type="text/javascript" src="wordsToCurrency.js"> </script>
+		<script type="text/javascript" src="numberDelimited.js"> </script>
 	</head>
 	<body>
-		<h3> Mike Serato's Number Library </h3>
-		Input word/number here: <input type="text" id="input1"> <br/>
-		<button id="convert" onclick="showResult(numToWords())"> Convert to Words! </button> <br/>
-		<button id="convert" onclick="showResult(wordsToNum())"> Convert to Numbers! </button> <br/> <br/> 
+		<h3> WELCOME TO MIKE SERATO'S NUMBER LIBRARY </h3>
 
-		Optional: <br/>
-		Input currency here: <input type="text" id="input2"> <br/> 
-		<button id="convert" onclick="showResult(wordsToCurrency())"> Convert with Currency! </button> <br/> <br/> 
+		<p> Please go to the console to begin. </p>
 
-		Input delimiter here: <input type="text" id="input3"> <br/>
-		Input number of jumps here: <input type="text" id="input4"> <br/>
-		<button id="convert" onclick="showResult(numberDelimited())"> Convert with Delimiter! </button> 
-		
+		<br/> <h4> Tips: </h4>
+		<p> Convert Number to Words ---> numToWords('number'); </p>
+		<p> Convert Words to Number ---> wordsToNum('words'); </p>
+		<p> Convert Words to Number with Currency ---> wordsToCurrency('words','JPY/PHP/USD'); </p>
+		<p> Insert a Delimiter to a Number ---> numberDelimited('number','character','number of jumps'); </p>
 	</body>
 </html>
 
